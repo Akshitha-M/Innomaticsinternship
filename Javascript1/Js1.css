@@ -1,0 +1,211 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e66e05; /* Light purple background */
+    color: #333;
+}
+
+header {
+    background-color: #e4ad5b; /* Purple header background */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #ea8705;
+    height: 100vh; /* Full-height */
+    width: 150px; /* Set a width for the navbar */
+    position: fixed; /* Fixed position */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+nav button {
+    background-color: #f5c76c; /* Light purple nav button */
+    color: #512b58; /* Dark purple text */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px; /* Spacing between items */
+    height: 40px;
+}
+
+nav button:hover {
+    background-color: #e4e182; /* Slightly darker purple on hover */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: 150px;
+}
+
+.problem-card {
+    background-color: #db7b58; /* Light purple card background */
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #f91505; /* Slightly darker purple border */
+}
+
+.problem-card h2 {
+    color: #f4c048; /* Dark purple heading text */
+    margin-top: 0;
+    text-align: center; /* Center align problem titles */
+    margin-bottom: 20px; /* Add margin below problem title */
+}
+
+/* Styles for Discount & Shipping info in Online Shopping */
+.discount-info {
+    background-color: #e8daff; /* Very light purple background for info box */
+    border: 1px solid #bae053;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.discount-info h3 {
+    color: #b79f1a;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.discount-info ul {
+    padding-left: 20px;
+    list-style-type: disc;
+    color: #f4c048;
+}
+
+/* Styles for Order Section */
+.order-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /* Stretch items to fill container width */
+}
+
+.order-section label {
+    display: block; /* Ensure label takes full width */
+    margin-bottom: 8px;
+    color: #f4c048;
+    text-align: left; /* Align label text to the left */
+}
+
+.order-section input[type="number"] {
+    padding: 10px;
+    border: 1px solid #d6bbf0;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.order-section button {
+    background-color: #9b5de5;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    align-self: center; /* Center the button */
+}
+
+.order-section button:hover {
+    background-color: #e3c21d;
+}
+
+
+/* Styles for Calculation Results */
+.calculation-results {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #d6bbf0;
+    border-radius: 4px;
+    background-color: #e8daff; /* Very light purple for result background */
+}
+
+.calculation-results p {
+    margin: 8px 0;
+    font-weight: bold;
+    color: #512b58;
+}
+
+.calculation-results span {
+    font-weight: normal;
+}
+
+
+.input-group {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input-group label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 15px;
+    color: #512b58; /* Dark purple label text */
+}
+
+.input-group input,
+.input-group select,
+.input-group textarea {
+    padding: 10px;
+    border: 1px solid #d6bbf0; /* Border color matching card border */
+    border-radius: 4px;
+    flex-grow: 1;
+    font-size: 1rem;
+}
+
+.problem-card button {
+    background-color: #ecd425; /* Purple button background */
+    color: rgb(14, 97, 252);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    display: block; /* Make button full width if desired */
+    margin-top: 20px;    /* Add some space above the button */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.problem-card button:hover {
+    background-color: #eba210; /* Darker purple on hover */
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border: 1px solid #d6bbf0; /* Result border color */
+    border-radius: 4px;
+    background-color: #e8daff; /* Very light purple for result background */
+    color: #512b58; /* Dark purple result text */
+    word-wrap: break-word; /* To prevent overflow of long text */
+}
